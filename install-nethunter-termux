@@ -49,7 +49,7 @@ function get_arch() {
     printf "${blue}[*] Checking device architecture ..."
     case $(getprop ro.product.cpu.abi) in
         x86_64)
-            SYS_ARCH=i386
+            SYS_ARCH=amd64
             ;;
         armeabi|armeabi-v7a)
             SYS_ARCH=armhf
